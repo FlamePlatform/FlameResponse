@@ -24,8 +24,7 @@
     "gulp-watch": "^4.3.5",
     "mocha": "^2.3.4",
     "node-mocks-http": "^1.5.1",
-    "sinon": "^1.17.2",
-    "watch": "^0.16.0"
+    "sinon": "^1.17.2"
   },
   "babel": {
     "presets": [
