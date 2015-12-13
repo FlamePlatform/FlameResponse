@@ -16,3 +16,16 @@ gulp.task("build", function() {
   })).
   pipe(gulp.dest("dist"))
 })
+
+
+gulp.task("watch", function() {
+  pipe(watch("src/**.js")).
+  pipe(babel({
+    presets: ["es2015", "stage-0"],
+    plugins: ["transform-runtime"]
+  })).
+  pipe(print(function(file){
+    return "built "+file
+  })).
+  pipe(gulp.dest("dist"))
+})
