@@ -24,7 +24,7 @@ export class FlameResponse{
   }
 }
 
-export class HTMLResponse extends flame-response{
+export class HTMLResponse extends FlameResponse{
   constructor(req,res){
     super(req,res);
     this.setHeader("content-type","text/html");
@@ -39,7 +39,7 @@ export class HTMLResponse extends flame-response{
 }
 
 
-export class JsonResponse extends flame-response{
+export class JsonResponse extends FlameResponse{
   constructor(req,res){
     super(req,res);
     this.setHeader("content-type","application/json");
@@ -54,7 +54,7 @@ export class JsonResponse extends flame-response{
 }
 
 
-export class FileResponse extends flame-response{
+export class FileResponse extends FlameResponse{
   constructor(req,res){
     super(req,res);
     this.setHeader("content-type","application/octet-stream");
